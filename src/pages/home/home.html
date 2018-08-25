@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<button (click)="chamarPagina()" ion-button full color="danger" round>Chamar Página</button>
+
+<button (click)="chamarPaginaRaiz()" ion-button full color="danger" round>Chamar Página Raiz</button>
+
+
+<ion-list>
+  <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="aluno.nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>RA</ion-label>
+    <ion-input type="text" [(ngModel)]="aluno.ra"></ion-input>
+  </ion-item>
+  <button (click)="cadastrar()" ion-button full
+        color="danger" round>Cadastrar</button>
+</ion-list>
+<hr/><hr/>
+<button (click)="mostrarAlunos()" ion-button full
+      color="danger" round>Mostrar Alunos Cadastrados</button>
+
+</ion-content>
+<ion-footer>
+  <ion-navbar>
+    <button (click)="cadastrarComDialog()" ion-button full
+          color="primary">Cadastar Com Dialog</button>
+  </ion-navbar>
+</ion-footer>
